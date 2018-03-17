@@ -1,0 +1,8 @@
+{
+    "muxbots_lib_version": "1.0",
+    "type": "feedbot",
+    "title": "Photos from National Geographic",
+    "intro_message": "Subscribe to see beautiful selection of photos from https://www.nationalgeographic.com/photography",
+    "image": "https://www.nationalgeographic.com/etc/designs/platform/v3/images/apple-touch-icon.ngsversion.5aab2046.png",
+    "source_url": "nationa_geographic.js"
+}
