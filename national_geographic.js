@@ -19,9 +19,11 @@ const handleOnFeedPull = async (callback) => {
     const pageContent = await fetchPhotoOfTheDay()
     const photoOfTheDay = parseOpenGraph(pageContent)
     muxbots.newResponse()
-      .addMessage(`"${photoOfTheDay.title}"`)
       .addImage(photoOfTheDay.imageURL)
-      .addMessage(`${photoOfTheDay.url}`)
+      .addWebpageSmall(muxbots.newWebpage()
+        .setURL(photoOfTheDay.url)
+        .setTitle(photoOfTheDay.title)
+        .setImage('https://www.wikipeia.org/static/apple-touch/wikipedia.png'))
       .send(callback)
     muxbots.localStorage.setItem('lastFetchDate', currentDateString)
   } catch (error) {
