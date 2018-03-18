@@ -23,7 +23,7 @@ const handleOnFeedPull = async (callback) => {
       .addWebpageSmall(muxbots.newWebpage()
         .setURL(photoOfTheDay.url)
         .setTitle(photoOfTheDay.title)
-        .setImage('https://www.wikipeia.org/static/apple-touch/wikipedia.png'))
+        .setImage('https://www.nationalgeographic.com/etc/designs/platform/v3/images/apple-touch-icon.ngsversion.5aab2046.png'))
       .send(callback)
     muxbots.localStorage.setItem('lastFetchDate', currentDateString)
   } catch (error) {
